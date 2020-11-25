@@ -1,6 +1,6 @@
 import './App.css';
 import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider } from '@apollo/client'
-
+//apollo config
 const httpLink = createHttpLink({
   uri: 'http://localhost:5000'
 })
