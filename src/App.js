@@ -1,17 +1,9 @@
 import './App.css';
-import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider } from '@apollo/client'
-//apollo config
-const httpLink = createHttpLink({
-  uri: 'http://localhost:5000'
-})
+import ApolloProvider from './ApolloProvider'
 
-const client = new ApolloClient({
-  link: httpLink,
-  cache: new InMemoryCache()
-})
 function App() {
   return (
-    <ApolloProvider client={client}>
+    <ApolloProvider>
       <div>
         <h1>Hello there dudes</h1>
       </div>
