@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache, createHttpLink, ApolloProvider as Provider } from '@apollo/client'
 //apollo config
 const httpLink = createHttpLink({
-    uri: 'http://socialapi.thatguy.gr:5000/'
+    uri: 'http://localhost:5000/'
 })
 const client = new ApolloClient({
     link:httpLink,
