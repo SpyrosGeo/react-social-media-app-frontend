@@ -39,6 +39,13 @@ export default function Register(props) {
         email:'',
     
     })
+   const initialState={
+        username:'',
+        password:'',
+        confirmPassword:'',
+        email:'',
+    
+    }
     const [addUser, { loading }] = useMutation(REGISTER_USER, {
         update(_, result) {
             console.log(result)
