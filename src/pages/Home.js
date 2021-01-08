@@ -4,6 +4,7 @@ import {Grid } from 'semantic-ui-react'
 import PostCard from '../components/PostCard'
 
 const FETCH_POSTS_QUERY = gql`
+
 query getPosts {
   getPosts{
       id body createdAt username likeCount

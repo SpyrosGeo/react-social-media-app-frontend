@@ -26,7 +26,7 @@ export default function PostCard({ post: { comments,body, createdAt, id, usernam
                 <Card.Header>{username}</Card.Header>
                 <Card.Meta as={Link} to={`/posts/${id}`}>{moment(createdAt).fromNow(true)}</Card.Meta>
                 <Card.Description>
-                    Steve wants to add you to the group <strong>best friends</strong>
+                    {body}
                 </Card.Description>
             </Card.Content>
             <Card.Content extra>
